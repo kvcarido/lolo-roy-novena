@@ -106,12 +106,25 @@ body {
     line-height: 1.75;
 }
 
+.img {
+    max-width: 25rem;
+    margin: 5rem auto;
+}
+
+img {
+    border-radius: 50%;
+}
+
 header {
     text-align: center;
 }
 
 section {
-    margin: 5rem 0;
+    margin: 7rem 0;
+}
+
+#survived-by {
+    text-align: center;
 }
 
 .rosary-h4 {
@@ -156,6 +169,11 @@ a:hover {
     color: var(--moss);
 }
 
+.title {
+    border-bottom: 4px dashed var(--white);
+    margin-bottom: var(--lrg);
+}
+
 .amen {
     font-weight: 700;
     font-style: italic;
@@ -164,11 +182,12 @@ a:hover {
 
 .speaker {
     font-weight: 700;
-    margin-right: 0.5rem;
+    margin-right: var(--xsml);
     border-bottom: 2px solid var(--burgundy);
 }
 
 .creds {
-    font-size: var(--xsml);
-    font-weight: 500;
+    color: var(--burgundy);
+    font-weight: 100;
+    font-style: italic;
 }
