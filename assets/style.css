@@ -182,6 +182,7 @@ a:hover {
 
 .speaker {
     font-weight: 700;
+    color: var(--burgundy);
     margin-right: var(--xsml);
     border-bottom: 2px solid var(--burgundy);
 }
