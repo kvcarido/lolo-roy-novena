@@ -3,8 +3,6 @@
 /*************/
 
 :root {
-    /* fonts */
-
     /* font sizes */
     --xlrg: 4rem; 
     --lrg: 2.5rem;
@@ -15,11 +13,11 @@
     --spacer: 1rem;
 
     /* colors */
-    --burgundy: #6B2737;
-    --moss: #466362;
-    --sand: #FFEAD0;
-    --darkgrey: #333333;
-    --white: #FFFFFF;
+    --dark-blue: #274C77;
+    --med-blue: #6096BA;
+    --light-blue: #A3CEF1;
+    --light-grey: #E7ECEF;
+    --dark-grey: #222222;
 }
 
 /****************/
@@ -99,7 +97,7 @@ html {
 /**********/
 
 body {
-    background-color: var(--sand);
+    background-color: var(--light-blue);
     color: var(--darkgrey);
     font-family: sans-serif;
     font-size: var(--body);
@@ -111,8 +109,14 @@ body {
     margin: 5rem auto;
 }
 
+.footer-img {
+    max-width: 15rem;
+    margin: 2rem auto;
+}
+
 img {
     border-radius: 50%;
+    border: 0.5rem solid var(--dark-blue);
 }
 
 header {
@@ -137,58 +141,67 @@ section {
 
 h1 {
     font-size: var(--xlrg);
-    color: var(--burgundy);
+    color: var(--dark-blue);
+    font-weight: 800;
+    font-style: italic;
 }
 
 h2 {
     font-size: var(--lrg);
-    color: var(--burgundy);
+    color: var(--dark-blue);
 }
 
 h3 {
     font-size: var(--med);
-    color: var(--moss);
+    color: var(--med-blue);
 }
 
 h4 {
     font-size: var(--sml);
-    color: var(--moss);
+    color: var(--med-blue);
     text-transform: uppercase;
+    letter-spacing: 0.25rem;
 }
 
 a {
     font-size: var(--sml);
     font-weight: 700;
-    color: var(--burgundy);
+    color: var(--dark-blue);
     text-decoration: none;
-    border-bottom: 1px solid var(--burgundy);
+    border-bottom: 1px solid var(--dark-blue);
 
 }
 
 a:hover {
-    color: var(--moss);
+    color: var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
 }
 
 .title {
-    border-bottom: 4px dashed var(--white);
+    letter-spacing: 0.5rem;
     margin-bottom: var(--lrg);
+}
+
+.header {
+    font-size: var(--sml);
+    color: var(--dark-grey);
 }
 
 .amen {
     font-weight: 700;
     font-style: italic;
-    color: var(--moss);
+    color: var(--med-blue);
 }
 
 .speaker {
     font-weight: 700;
-    color: var(--burgundy);
+    color: var(--dark-blue);
     margin-right: var(--xsml);
-    border-bottom: 2px solid var(--burgundy);
+    border-bottom: 2px solid var(--dark-blue);
 }
 
 .creds {
-    color: var(--burgundy);
+    color: var(--med-blue);
     font-weight: 100;
     font-style: italic;
 }
