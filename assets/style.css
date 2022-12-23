@@ -97,11 +97,32 @@ html {
 /**********/
 
 body {
+    font-family: 'Noto Sans', sans-serif;
     background-color: var(--light-blue);
     color: var(--darkgrey);
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     font-size: clamp(1.25rem, 3vw, 1.5rem);
     line-height: 1.75;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    margin: 7rem 0;
+}
+
+footer {
+    margin-bottom: var(--med);
+}
+
+img {
+    border-radius: 50%;
+    border: 0.5rem solid var(--dark-blue);
+    -webkit-box-shadow: -10px 20px 40px 15px var(--med-blue);
+    -moz-box-shadow: -10px 20px 40px 15px var(--med-blue);
+    box-shadow: -10px 20px 40px 15px var(--med-blue);
 }
 
 .img {
@@ -112,19 +133,6 @@ body {
 .footer-img {
     max-width: 15rem;
     margin: 2rem auto;
-}
-
-img {
-    border-radius: 50%;
-    border: 0.5rem solid var(--dark-blue);
-}
-
-header {
-    text-align: center;
-}
-
-section {
-    margin: 7rem 0;
 }
 
 #survived-by {
@@ -140,6 +148,7 @@ section {
 /**********/
 
 h1 {
+    font-family: 'Noto Serif', serif;
     font-size: clamp(2rem, 5vw, 4rem);
     color: var(--dark-blue);
     font-weight: 800;
@@ -164,7 +173,8 @@ h4 {
 }
 
 a {
-    font-size: var(--sml);
+    font-family: 'Noto Serif', serif;
+    font-size: inherit;
     font-weight: 700;
     color: var(--dark-blue);
     text-decoration: none;
@@ -178,7 +188,8 @@ a:hover {
 }
 
 .title {
-    letter-spacing: 0.25rem;
+    font-weight: 700;
+    /* letter-spacing: 0.25rem; */
     margin-bottom: var(--lrg);
 }
 
@@ -194,10 +205,11 @@ a:hover {
 }
 
 .speaker {
+    font-family: 'Noto Serif', serif;
     font-weight: 700;
     color: var(--dark-blue);
-    margin-right: var(--xsml);
-    border-bottom: 2px solid var(--dark-blue);
+    margin-right: 0.5rem;
+    border-bottom: 1px solid var(--dark-blue);
 }
 
 .creds {
